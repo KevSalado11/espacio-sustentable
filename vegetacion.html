@@ -5,7 +5,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Información sobre la Vegetación</title>
     <style>
-        
         * {
             margin: 0;
             padding: 0;
@@ -18,46 +17,41 @@
             display: flex;
             justify-content: center;
             align-items: center;
-            height: 2000px;
+            min-height: 100vh;
             color: #333;
         }
 
-        
         .container {
             background-color: #f1f5f8;
-            
-            max-width: 1700px;
-            padding: 100px;
+            max-width: 900px;
+            margin: 20px auto;
+            padding: 40px;
             border-radius: 10px;
             box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
             text-align: center;
         }
 
-       
         .container h1 {
             font-size: 36px;
             color: #4CAF50;
             margin-bottom: 20px;
         }
 
-       
         .container h2 {
             font-size: 24px;
             color: #6a6a6a;
             margin-bottom: 20px;
         }
 
-        
         .container p {
             font-size: 16px;
-            color: #555;
+            color: #444;
             line-height: 1.6;
             margin-bottom: 20px;
         }
 
-        
         .container img {
-            width: 70%;
+            width: 100%;
             max-width: 600px;
             height: auto;
             margin-bottom: 20px;
@@ -65,7 +59,6 @@
             box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
         }
 
-        
         .container button {
             padding: 10px 20px;
             background-color: #4CAF50;
@@ -77,55 +70,85 @@
             transition: background-color 0.3s ease;
         }
 
-        	    
+        .container button:hover {
+            background-color: #45a049;
+        }
 
+        ul {
+            text-align: left;
+            margin: 0 auto 20px auto;
+            padding-left: 40px;
+        }
+
+        ul li {
+            margin-bottom: 10px;
+        }
+
+        ul li p {
+            display: inline;
+        }
+
+        img.back-button {
+            box-shadow: none;
+            border-radius: 0;
+            width: 3%;
+            height: auto;
+        }
+
+        @media (max-width: 768px) {
+            .container {
+                padding: 20px;
+            }
+        }
     </style>
 </head>
 <body>
 
     <div class="container">
-<p align="left"><a href="index.html"><img style="box-shadow: none; border-radius: 0; width: 3%; height: 1%;" src='imagenes/regresar.png'></a></p>
- 	<h1>La Vegetación del Planeta</h1>
-        <strong><h2>¿Que es la Vegetación?</h2></strong>
-
-        <img src="imagenes/vegetacion.png"> 
-
-
+        <p align="left">
+            <a href="index.html">
+                <img class="back-button" src="imagenes/regresar.png" alt="Regresar">
+            </a>
+        </p>
+        <h1>La Vegetación del Planeta</h1>
+        <h2><strong>¿Qué es la Vegetación?</strong></h2>
+        <img src="imagenes/vegetacion.png" alt="Vegetación del planeta">
         <p>La vegetación se refiere al conjunto de plantas que crecen en un área específica, incluyendo árboles, arbustos, hierbas y otros organismos vegetales. 
             Esta diversidad de formas de vida es crucial para el equilibrio ecológico de nuestro planeta.</p>
 
-            <strong><p>Importancia de la Vegetación</strong></p>
-            <p>La vegetación juega un papel fundamental en la sostenibilidad del medio ambiente. Algunas de sus funciones más destacadas incluyen:</p>
-
-        <ul type = square>
-            <li><p>Producción de oxígeno: Las plantas realizan la fotosíntesis, liberando oxígeno y absorbiendo dióxido de carbono.
-                <li><p>Regulación del clima: La vegetación ayuda a moderar las temperaturas y mantener la humedad del aire.
-                    <li><p>Hábitat para la fauna: Proporciona refugio y alimento a una gran variedad de especies animales.
-                        <li><p>Recursos económicos: Es una fuente vital de alimentos, madera, medicinas y otros productos.</p>
+        <h2><strong>Importancia de la Vegetación</strong></h2>
+        <p>La vegetación juega un papel fundamental en la sostenibilidad del medio ambiente. Algunas de sus funciones más destacadas incluyen:</p>
+        <ul type="square">
+            <li>Producción de oxígeno: Las plantas realizan la fotosíntesis, liberando oxígeno y absorbiendo dióxido de carbono.</li>
+            <li>Regulación del clima: La vegetación ayuda a moderar las temperaturas y mantener la humedad del aire.</li>
+            <li>Hábitat para la fauna: Proporciona refugio y alimento a una gran variedad de especies animales.</li>
+            <li>Recursos económicos: Es una fuente vital de alimentos, madera, medicinas y otros productos.</li>
         </ul>
 
-        <strong><p>Características de la Vegetación</p></strong>
-        <ul type = square>
-            <li><p>Diversidad: Existen diferentes tipos de vegetación, desde densos bosques hasta áridos desiertos, cada uno adaptado a su entorno.
-            <li><p>Adaptación: Las plantas desarrollan características únicas para sobrevivir en sus condiciones específicas, como la resistencia a la sequía o la tolerancia al frío.
-            <li><p>Ciclos de vida: Las plantas pasan por etapas de germinación, crecimiento, reproducción y muerte, contribuyendo al ciclo natural de los ecosistemas.</p>
-            </ul>
+        <h2><strong>Características de la Vegetación</strong></h2>
+        <ul type="square">
+            <li>Diversidad: Existen diferentes tipos de vegetación, desde densos bosques hasta áridos desiertos, cada uno adaptado a su entorno.</li>
+            <li>Adaptación: Las plantas desarrollan características únicas para sobrevivir en sus condiciones específicas, como la resistencia a la sequía o la tolerancia al frío.</li>
+            <li>Ciclos de vida: Las plantas pasan por etapas de germinación, crecimiento, reproducción y muerte, contribuyendo al ciclo natural de los ecosistemas.</li>
+        </ul>
 
-            <strong><p>Ventajas de la Vegetación</p></strong>
-            <ul type = square>
-                <li><p>Biodiversidad: Fomenta un ecosistema diverso, esencial para la salud del planeta.
-                <li><p>Control de erosión: Las raíces de las plantas ayudan a estabilizar el suelo, previniendo su erosión.
-                <li><p>Ciclo del agua: Facilita la absorción y transpiración, regulando el ciclo hídrico local.
-                <li><p>Beneficios para la salud: Mejora la calidad del aire y proporciona espacios recreativos que benefician el bienestar humano.</p>
-                </ul>
+        <h2><strong>Ventajas de la Vegetación</strong></h2>
+        <ul type="square">
+            <li>Biodiversidad: Fomenta un ecosistema diverso, esencial para la salud del planeta.</li>
+            <li>Control de erosión: Las raíces de las plantas ayudan a estabilizar el suelo, previniendo su erosión.</li>
+            <li>Ciclo del agua: Facilita la absorción y transpiración, regulando el ciclo hídrico local.</li>
+            <li>Beneficios para la salud: Mejora la calidad del aire y proporciona espacios recreativos que benefician el bienestar humano.</li>
+        </ul>
 
-                <strong><p>Desventajas de la vegetación</p></strong>
-                <ul type = square>
-                    <li><p>Competencia por recursos: En algunas ocasiones, las plantas pueden competir por nutrientes, agua o luz, lo que puede dificultar el crecimiento de otras especies.
-                    <li><p>Plagas y enfermedades: Algunas especies vegetales son susceptibles a plagas o enfermedades que pueden afectarlas y, en algunos casos, poner en riesgo la agricultura y los ecosistemas.
-                    <li><p>Accidentes naturales: La vegetación, especialmente los bosques, puede ser susceptible a incendios forestales, lo que puede causar daños significativos tanto a la flora como a la fauna.
-                    <li><p>Invasión de especies: Las especies invasoras pueden desplazar a las plantas nativas y alterar el equilibrio ecológico de un ecosistema.</h3>
-                    </ul>    </div>
+        <h2><strong>Desventajas de la Vegetación</strong></h2>
+        <ul type="square">
+            <li>Competencia por recursos: En algunas ocasiones, las plantas pueden competir por nutrientes, agua o luz, lo que puede dificultar el crecimiento de otras especies.</li>
+            <li>Plagas y enfermedades: Algunas especies vegetales son susceptibles a plagas o enfermedades que pueden afectarlas y, en algunos casos, poner en riesgo la agricultura y los ecosistemas.</li>
+            <li>Accidentes naturales: La vegetación, especialmente los bosques, puede ser susceptible a incendios forestales, lo que puede causar daños significativos tanto a la flora como a la fauna.</li>
+            <li>Invasión de especies: Las especies invasoras pueden desplazar a las plantas nativas y alterar el equilibrio ecológico de un ecosistema.</li>
+        </ul>
+    </div>
 
 </body>
 </html>
+
